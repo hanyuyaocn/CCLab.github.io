@@ -145,7 +145,7 @@ function drawWaves(minY, maxY, sign) {
   strokeWeight(2);  // Adjust stroke weight for visibility
   beginShape();
   vertex(0, height);
-  for (waveX1 = 0; waveX1 < width+20; waveX1 += 10) {
+  for (waveX1 = 0; waveX1 < width+100; waveX1 += 10) {
     angle1 = offset1 + waveX1 * 0.01 * abs(r);  // Scale wave speed with abs(r)
     waveY1 = map(sign * sin(0.5 * angle1), -strum, strum, minY, maxY);
     vertex(waveX1, waveY1);
