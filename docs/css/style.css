@@ -36,7 +36,6 @@ body {
     color: gold;
 }
 
-
 .two-columns {
     display: flex;
 }
@@ -51,7 +50,6 @@ body {
     padding: 0px 0px 0px 10px;
 }
 
-
 #footer {
     text-align: center;
     font-size: 0.7em;
@@ -62,14 +60,6 @@ body {
 /* Sketch placeholder */
 #p5-canvas-container img {
     width: 800px;
-}
-
-#p5-canvas {
-    position: absolute;
-    left: calc(50% - 400px);
-    /* half of canvas width */
-    top: calc(50% - 250px);
-    /* half of canvas height */
 }
 
 /* home button */
@@ -90,6 +80,7 @@ body {
     color: black;
 }
 
+/* Center the canvas */
 #p5-canvas-container {
     display: flex;
     justify-content: center;
@@ -97,4 +88,9 @@ body {
     height: 100vh; /* Full viewport height */
     width: 100vw;  /* Full viewport width */
     position: relative;
+}
+
+canvas {
+    /* Optional border for visual aid */
+    border: 2px solid coral;
 }
