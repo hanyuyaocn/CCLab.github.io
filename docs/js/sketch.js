@@ -29,6 +29,9 @@ let hClock;
 function setup() {
   createCanvas(800, 500);
 
+  let canvas = createCanvas(800, 600);  // Adjust the size of the canvas as needed
+  canvas.parent('p5-canvas-container');
+
   // Initialize bubbles
   for (let i = 0; i < 4; i++) {
     xBubble[i] = random(50, width - 50);
