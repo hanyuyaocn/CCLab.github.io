@@ -3,12 +3,18 @@ body {
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 /* title */
 #title-wrapper {
     text-align: center;
-    margin-top: 120px;
+    margin-bottom: 20px;
 }
 
 .headline {
@@ -17,11 +23,11 @@ body {
     font-weight: 600;
 }
 
-/* main content */
 #main-wrapper {
     width: 800px;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .red {
@@ -40,29 +46,33 @@ body {
     display: flex;
 }
 
-.left {
+.left, .right {
     width: 50%;
-    padding: 0px 10px 0px 0px;
-}
-
-.right {
-    width: 50%;
-    padding: 0px 0px 0px 10px;
+    padding: 10px;
 }
 
 #footer {
     text-align: center;
     font-size: 0.7em;
     margin-top: 50px;
-    padding-bottom: 40px;
 }
 
-/* Sketch placeholder */
-#p5-canvas-container img {
-    width: 800px;
+/* Center the canvas */
+#p5-canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative;
 }
 
-/* home button */
+canvas {
+    /* Optional border for visual aid */
+    border: 2px solid coral;
+}
+
+/* Home button */
 #home-button a {
     position: fixed;
     right: 30px;
@@ -80,17 +90,3 @@ body {
     color: black;
 }
 
-/* Center the canvas */
-#p5-canvas-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    width: 100vw;  /* Full viewport width */
-    position: relative;
-}
-
-canvas {
-    /* Optional border for visual aid */
-    border: 2px solid coral;
-}
