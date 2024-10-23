@@ -27,7 +27,9 @@ let angVel = 0.1;
 let hClock;
 
 function setup() {
-  createCanvas(800, 500);
+  let canvas= createCanvas(800, 500);
+    canvas.parent("p5-canvas-container")
+  generateCells();
 
   // Initialize bubbles
   for (let i = 0; i < 4; i++) {
